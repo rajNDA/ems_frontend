@@ -1,0 +1,33 @@
+<h3>Add Employee</h3>
+
+<form (ngSubmit)="addEmployee()" class="form">
+
+  <input type="text"
+         placeholder="Enter Name"
+         [(ngModel)]="employee.name"
+         name="name"
+         required>
+
+  <input type="email"
+         placeholder="Enter Email"
+         [(ngModel)]="employee.email"
+         name="email"
+         required>
+
+  <input type="text"
+         placeholder="Enter Department"
+         [(ngModel)]="employee.department"
+         name="department"
+         required>
+
+  <input type="number"
+         placeholder="Enter Salary"
+         [(ngModel)]="employee.salary"
+         name="salary"
+         required>
+
+  <button type="submit" class="btn info">
+    Add Employee
+  </button>
+
+</form>

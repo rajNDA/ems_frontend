@@ -1,0 +1,14 @@
+<h3>Delete Employee</h3>
+
+<div class="form">
+
+  <input type="number"
+         placeholder="Enter Employee ID"
+         [(ngModel)]="employeeId"
+         name="id">
+
+  <button (click)="deleteEmployee()" class="btn danger">
+    Delete Employee
+  </button>
+
+</div>
