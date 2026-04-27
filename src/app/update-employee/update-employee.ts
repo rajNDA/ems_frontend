@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { EmployeeService } from '../employee';
 import { Employee } from '../employee.model';
 
 @Component({
