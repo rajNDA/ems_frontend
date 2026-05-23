@@ -1,35 +1,29 @@
 <h3>Update Employee</h3>
 
-<form (ngSubmit)="updateEmployee()" class="form">
+<div class="form-container">
 
   <input type="number"
-         placeholder="Enter Employee ID"
          [(ngModel)]="employee.id"
-         name="id"
-         required>
+         placeholder="Enter ID">
 
   <input type="text"
-         placeholder="Enter Name"
          [(ngModel)]="employee.name"
-         name="name">
+         placeholder="Enter Name">
 
   <input type="email"
-         placeholder="Enter Email"
          [(ngModel)]="employee.email"
-         name="email">
-         
+         placeholder="Enter Email">
+
   <input type="text"
-         placeholder="Enter Department"
          [(ngModel)]="employee.department"
-         name="department">
+         placeholder="Enter Department">
 
   <input type="number"
-         placeholder="Enter Salary"
          [(ngModel)]="employee.salary"
-         name="salary">
+         placeholder="Enter Salary">
 
-  <button type="submit" class="btn warning">
-    Update Employee
-  </button>
+<button (click)="updateEmployee()" class="btn warning">
+  Update Employee
+</button>
 
-</form>
+</div>

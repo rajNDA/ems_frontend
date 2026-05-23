@@ -1,0 +1,49 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* Inputs styling */
+.form-container input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Focus effect */
+.form-container input:focus {
+  border-color: #2f6fed;
+  box-shadow: 0 0 4px rgba(47, 111, 237, 0.4);
+}
+
+/* Button spacing */
+.form-container button {
+  margin-top: 10px;
+}
+
+/* Base button */
+.btn {
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  margin: 6px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Green (Add) */
+.success {
+  background-color: #28a745;
+}
+
+.success:hover {
+  background-color: #1e7e34;
+}

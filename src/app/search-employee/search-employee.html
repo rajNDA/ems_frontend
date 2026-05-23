@@ -1,0 +1,29 @@
+<h3>Search Employee by ID</h3>
+
+<div class="form-container">
+
+  <input type="number"
+         [(ngModel)]="id"
+         placeholder="Enter Employee ID">
+
+<button (click)="searchEmployee()" class="btn primary">
+  Search
+</button>
+
+</div>
+
+<br>
+
+<!-- ✅ Employee Details -->
+<div *ngIf="employee" class="result-card">
+  <p><b>ID:</b> {{ employee.id }}</p>
+  <p><b>Name:</b> {{ employee.name }}</p>
+  <p><b>Email:</b> {{ employee.email }}</p>
+  <p><b>Department:</b> {{ employee.department }}</p>
+  <p><b>Salary:</b> {{ employee.salary }}</p>
+</div>
+
+<!-- ❌ Not Found -->
+<div *ngIf="notFound" class="not-found">
+  Employee not found
+</div>

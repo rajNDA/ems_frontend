@@ -1,33 +1,25 @@
 <h3>Add Employee</h3>
 
-<form (ngSubmit)="addEmployee()" class="form">
+<div class="form-container">
 
   <input type="text"
-         placeholder="Enter Name"
          [(ngModel)]="employee.name"
-         name="name"
-         required>
+         placeholder="Enter Name">
 
   <input type="email"
-         placeholder="Enter Email"
          [(ngModel)]="employee.email"
-         name="email"
-         required>
+         placeholder="Enter Email">
 
   <input type="text"
-         placeholder="Enter Department"
          [(ngModel)]="employee.department"
-         name="department"
-         required>
+         placeholder="Enter Department">
 
   <input type="number"
-         placeholder="Enter Salary"
          [(ngModel)]="employee.salary"
-         name="salary"
-         required>
+         placeholder="Enter Salary">
 
-  <button type="submit" class="btn info">
-    Add Employee
-  </button>
+<button (click)="addEmployee()" class="btn success">
+  Add Employee
+</button>
 
-</form>
+</div>
